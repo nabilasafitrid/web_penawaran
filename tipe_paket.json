@@ -1,0 +1,169 @@
+[
+    {
+     "id":"1",
+     "name":"Indoor",
+     "parent_id":"0"
+    }, 
+    {
+     "id":"2",
+     "name":"Outdoor",
+     "parent_id":"0"
+    }, 
+    {
+        "id":"3",
+        "name":"Urban Farming",
+        "parent_id":"0"
+    }, 
+    {
+     "id":"4",
+     "name":"250 – 400 m2",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"5",
+     "name":"500 – 750 m2",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"6",
+     "name":"≥1000 m2",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"7",
+     "name":"2500 m2",
+     "parent_id":"2"
+    }, 
+    {
+     "id":"8",
+     "name":"5000 m2",
+     "parent_id":"2"
+    }, 
+    {
+     "id":"9",
+     "name":"≥1 Ha",
+     "parent_id":"2"
+    },
+    {
+        "id":"10",
+        "name":"250 – 400 m2",
+        "parent_id":"3"
+    }, 
+    {
+        "id":"11",
+        "name":"Drip Tape",
+        "parent_id":"4"
+    },
+    {
+        "id":"12",
+        "name":"Drip Stick",
+        "parent_id":"4"
+    },
+    {
+        "id":"13",
+        "name":"Cooling",
+        "parent_id":"4"
+    },
+    {
+        "id":"14",
+        "name":"Drip Tape + Cooling",
+        "parent_id":"4"
+    },
+    {
+        "id":"15",
+        "name":"Drip Stick + Cooling",
+        "parent_id":"4"
+    },
+    {
+        "id":"16",
+        "name":"Drip Tape",
+        "parent_id":"5"
+    },
+    {
+        "id":"17",
+        "name":"Drip Stick",
+        "parent_id":"5"
+    },
+    {
+        "id":"18",
+        "name":"Cooling",
+        "parent_id":"5"
+    },
+    {
+        "id":"19",
+        "name":"Drip Tape + Cooling",
+        "parent_id":"5"
+    },
+    {
+        "id":"20",
+        "name":"Drip Stick + Cooling",
+        "parent_id":"5"
+    },
+    {
+        "id":"21",
+        "name":"Drip Tape",
+        "parent_id":"6"
+    },
+    {
+        "id":"22",
+        "name":"Drip Stick",
+        "parent_id":"6"
+    },
+    {
+        "id":"23",
+        "name":"Cooling",
+        "parent_id":"6"
+    },
+    {
+        "id":"24",
+        "name":"Drip Tape + Cooling",
+        "parent_id":"6"
+    },
+    {
+        "id":"25",
+        "name":"Drip Stick + Cooling",
+        "parent_id":"6"
+    },
+    {
+        "id":"26",
+        "name":"Drip Tape",
+        "parent_id":"7"
+    },
+    {
+        "id":"27",
+        "name":"Springkler",
+        "parent_id":"7"
+    },
+    {
+        "id":"28",
+        "name":"Drip Tape",
+        "parent_id":"8"
+    },
+    {
+        "id":"29",
+        "name":"Springkler",
+        "parent_id":"8"
+    },
+    {
+        "id":"30",
+        "name":"Drip Tape",
+        "parent_id":"9"
+    },
+    {
+        "id":"31",
+        "name":"Springkler",
+        "parent_id":"9"
+    },
+    {
+        "id":"32",
+        "name":"Drip Tape",
+        "parent_id":"10"
+    },
+    {
+        "id":"33",
+        "name":"Drip Stick",
+        "parent_id":"10"
+    }
+   
+    
+]

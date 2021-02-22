@@ -1,0 +1,346 @@
+<style>
+    body {
+  background: rgb(204,204,204);
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {
+  width: 21cm;
+  /* height: 29.7cm; */
+}
+page[size="A4"][layout="landscape"] {
+  width: 29.7cm;
+  height: 21cm;
+}
+page[size="A3"] {
+  width: 29.7cm;
+  height: 42cm;
+}
+page[size="A3"][layout="landscape"] {
+  width: 42cm;
+  height: 29.7cm;
+}
+page[size="A5"] {
+  width: 14.8cm;
+  height: 21cm;
+}
+page[size="A5"][layout="landscape"] {
+  width: 21cm;
+  height: 14.8cm;
+}
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+  .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+#border{
+  border: 1px solid black;
+}
+/* table, th, td {
+  border: 1px solid black;
+} */
+@media print {
+body {-webkit-print-color-adjust: exact;}
+}
+</style>
+
+
+<body>
+    <button class='no-print' type="button" onClick="window.print()" style="background: rgb(255, 255, 255);">
+        PRINT FORMULIR
+    </button>
+    <page size="A4">
+
+        <body>
+          
+            <table width="100%">
+              <tr>
+                <td width="65"> </td>
+                <td width="25" align="center"><img src="Asset 3.png" width="400%"></td>
+                <td>
+                  <font color="#33CCCC" size = 4.5> <p align="center"><b> PT. HABIBI DIGITAL NUSANTARA <br> TALK TO YOUR PLANT</p></b></font>
+                  <font > <p align="center"> Jln.Gading Utama Timur No.20, Blok B3/8, Kec.Cisantren Endah, <br>Arcamanik, Kota Bandung, Jawa Barat Indonesia <br>Phone : +62852 6996 3564 <font color="blue"><u>info@habibigarden.com </u></font></p></font>
+                </td>
+              </tr>
+              </table>
+            <hr>
+            <table cellspacing="0" border="0">
+              <colgroup width="210"></colgroup>
+	            <colgroup width="33"></colgroup>
+	            <colgroup width="59"></colgroup>
+	            <colgroup width="249"></colgroup>
+	            <colgroup width="116"></colgroup>
+	            <colgroup width="137"></colgroup>
+              <tr>
+                <td colspan=6 height="34" align="center" ><b><u><font size=4 >PENAWARAN SYSTEM TEKNOLOGI PERTANIAN</font></u></b></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td align="right"><b><font >Tanggal :</font></b></td>
+		            <td align="center"><b><font >{{date("d/m/Y")}}</font></b></td>
+              </tr>
+              <tr>
+                <td align="left" width="33"><b><font >Kepada YTH</font></b></td>
+                <td> : </td>
+                <td colspan=2> {{$data->nama}} </td>
+              </tr>
+              <tr>
+                <td align="left"><b><font >Alamat</font></b></td>
+                <td> : </td>
+                <td colspan=2> {{$data->alamat}} </td>
+              </tr>
+              <tr>
+                <td align="left"><b><font >Type Paket</font></b></td>
+                <td> : </td>
+                <td colspan=2> Indoor </td>
+              </tr>
+              <tr>
+                <td align="left"><b><font >Luasan Area</font></b></td>
+                <td> : </td>
+                <td colspan=2> 250 - 400 m2 </td>
+              </tr>
+              <tr>
+                <td align="left"><b><font >Pembagian Zona</font></b></td>
+                <td> : </td>
+                <td colspan=2> 1-2 Zona </td>
+              </tr>
+              <tr>
+                <td align="left"><b><font >Jenis Mekanikal</font></b></td>
+                <td> : </td>
+                <td colspan=2> DripTape </td>
+              </tr>
+              <tr>
+                <td align="left"><b><font >Cust-ID</font></b></td>
+                <td> : </td>
+                <td colspan=2> {{$data->cust}} </td>
+              </tr>
+              <tr>
+                <td align="left"><b><font >Quote#</font></b></td>
+                <td> : </td>
+                <td colspan=2> {{$data->quote}} </td>
+              </tr>
+              <tr>
+                <td colspan=6 height="40" valign=bottom align="left" ><b><font  color="#33CCCC">Produk Habibi Garden </font></b></td>
+              </tr>
+              <tr  style="background-color: #33CCCC;">
+                <td id="border" align="center" ><b><font>Kode Produk</font></b></td>
+                <td id="border" align="center" ><b><font> QTY </font></b></td>
+                <td id="border" align="center" ><b><font> UOM </font></b></td>
+                <td id="border" align="center" ><b><font> Nama Produk </font></b></td>
+                <td id="border" align="center" ><b><font> Harga  </font></b></td>
+                <td id="border" align="center" ><b><font> Total Harga </font></b></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font>HG</font></td>
+                <td id="border" align="center"><font> 1 </font></td>
+                <td id="border" align="center"><font> Unit </font></td>
+                <td id="border" align="left"><font> Habibi Grow</font></td>
+                <td id="border" align="right"><font> Rp8,000,000  </font></td>
+                <td id="border" align="right"><font> Rp8,000,000 </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font>HCI</font></td>
+                <td id="border" align="center"><font> 1 </font></td>
+                <td id="border" align="center"><font> Unit </font></td>
+                <td id="border" align="left"><font> Habibi Climate Indoor</font></td>
+                <td id="border" align="right"><font> Rp4,500,000  </font></td>
+                <td id="border" align="right"><font> Rp4,500,000 </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font>HL</font></td>
+                <td id="border" align="center"><font> 1 </font></td>
+                <td id="border" align="center"><font> Pack </font></td>
+                <td id="border" align="left"><font> Habibi Link</font></td>
+                <td id="border" align="right"><font> Rp3,000,000  </font></td>
+                <td id="border" align="right"><font> Rp3,000,000 </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font></font></td>
+                <td id="border" align="center"><font> 1 </font></td>
+                <td id="border" align="center"><font> Account </font></td>
+                <td id="border" align="left"><font> ~ Android Apps dan Web Apps</font></td>
+                <td id="border" align="right"><font>  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font></font></td>
+                <td id="border" align="center"><font> 1 </font></td>
+                <td id="border" align="center"><font> Unit </font></td>
+                <td id="border" align="left"><font> ~ Modem / Repeater</font></td>
+                <td id="border" align="right"><font>  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+              </tr>
+              <tr style="background-color:#33CCCC;">
+                <td id="border" colspan=5 height="18" align="center"><b><font>Sub Total Produk Habibi Garden</font></b></td>
+                <td id="border" align="right" ><b><font> Rp15,500,000 </font></b></td>
+              </tr>
+              <tr>
+                <td colspan=6 height="40" valign=bottom align="left" ><b><font  color="#33CCCC">Mekanikal Support Sistem </font></b></td>
+              </tr>
+              <tr style="background-color:#33CCCC;">
+                <td id="border" align="center" ><b><font>Kode Produk</font></b></td>
+                <td id="border" align="center" ><b><font> QTY </font></b></td>
+                <td id="border" align="center" ><b><font> UOM </font></b></td>
+                <td id="border" align="center" ><b><font> Nama Produk </font></b></td>
+                <td id="border" align="center" ><b><font> Harga  </font></b></td>
+                <td id="border" align="center" ><b><font> Total Harga </font></b></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font>HIF</font></td>
+                <td id="border" align="center"><font> 1 </font></td>
+                <td id="border" align="center"><font> Loc </font></td>
+                <td id="border" align="left"><font> Habibi Instalation Fee </font></td>
+                <td id="border" align="right"><font> Rp5.000,000  </font></td>
+                <td id="border" align="right"><font> Rp5.000,000</font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font>HMSFS</font></td>
+                <td id="border" align="center"><font> 1 </font></td>
+                <td id="border" align="center"><font> Pack </font></td>
+                <td id="border" align="left"><font> Habibi Mekanikal Support Irrigation System </font></td>
+                <td id="border" align="right"><font> Rp14.000,000  </font></td>
+                <td id="border" align="right"><font> Rp14.000,000 </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font> </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="left"><font> PVC Power AW </font></td>
+                <td id="border" align="right"><font>  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font> </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="left"><font> Fitting PVC </font></td>
+                <td id="border" align="right"><font>  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font> </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="left"><font> Selang DripTape </font></td>
+                <td id="border" align="right"><font>  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font> </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="left"><font> Fitting DripTape </font></td>
+                <td id="border" align="right"><font>  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font> </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="left"><font> Pompa Dorong  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font> </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="left"><font> Motorize Valve  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font> </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="left"><font> Filter  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font> </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="left"><font> Pressure Gauge  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font> </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="center"><font>  </font></td>
+                <td id="border" align="left"><font> PVC dan Elektrical Support  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+                <td id="border" align="right"><font>  </font></td>
+              </tr>
+              <tr style="background-color:#33CCCC;" >
+                <td id="border" colspan=5 height="18" align="center"><b><font>Sub Total Produk Habibi Garden</font></b></td>
+                <td id="border" align="right" ><b><font> Rp19,000,000 </font></b></td>
+              </tr>
+              <tr>
+                <td colspan=6 align="left" ><b>* : Menyesuaikan dengan Kebutuhan Lahan , Produk yang ditawarakan untuk Franco Jakarta, dan Jawa Barat</b></td>
+              </tr>
+              <tr>
+                <td colspan=4><br></td>
+                <td id="border" colspan=2 align="center" bgcolor="#33CCCC" ><b><font > Grand Total Project + PPn 10% </font></b></td>
+              </tr>
+              <tr>
+                <td colspan=4><br></td>
+                <td id="border" align="left" ><b><font > Total Project </font></b></td>
+                <td id="border" align="right"><font > Rp34,500,000 </font></td>
+              </tr>
+              <tr>
+                <td colspan=4><br></td>
+                <td id="border" align="left" ><b><font > PPn 10% </font></b></td>
+                <td id="border" align="right"><font > Rp3,450,000 </font></td>
+              </tr>
+              <tr>
+                <td colspan=4><br></td>
+                <td id="border" align="left" ><b><font > Grand Total Project </font></b></td>
+                <td id="border" align="right"><b><font > Rp37,950,000 </font></b></td>
+              </tr>
+              <tr>
+                <td colspan=6 height="40" valign=bottom align="left" ><b><font>Produk Habibi Garden (Optional) </font></b></td>
+              </tr>
+              <tr style="background-color:#33CCCC;">
+                <td id="border" align="center"><b><font>Kode Produk</font></b></td>
+                <td id="border" align="center"><b><font> QTY </font></b></td>
+                <td id="border" align="center"><b><font> UOM </font></b></td>
+                <td id="border" align="center"><b><font> Nama Produk </font></b></td>
+                <td id="border" align="center"><b><font> Harga  </font></b></td>
+                <td id="border" align="center"><b><font> Total Harga </font></b></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font>HD</font></td>
+                <td id="border" align="center"><font> 1 </font></td>
+                <td id="border" align="center"><font> Pack </font></td>
+                <td id="border" align="left"><font> Habibi Dose </font></td>
+                <td id="border" align="right"><font> Rp12,000,000  </font></td>
+                <td id="border" align="right"><font> Rp12,000,000 </font></td>
+              </tr>
+              <tr>
+                <td id="border" align="center"><font>HCS</font></td>
+                <td id="border" align="center"><font> 1 </font></td>
+                <td id="border" align="center"><font> Pack </font></td>
+                <td id="border" align="left"><font> Habibi Climate Station (1-10 HA) </font></td>
+                <td id="border" align="right"><font> Rp17,000,000  </font></td>
+                <td id="border" align="right"><font> Rp17,000,000 </font></td>
+              </tr>
+            </table>
+    
+    </page>
+</body>
+</html>

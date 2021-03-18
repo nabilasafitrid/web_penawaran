@@ -56,6 +56,13 @@ page-break-before: auto;
 /* table, th, td {
   border: 1px solid black;
 } */
+table, th, td {
+  border: 0px solid black;
+  border-collapse: collapse;
+}
+  th, td {
+  padding: 5px;
+}
 @media print {
 body {-webkit-print-color-adjust: exact;}
 }
@@ -63,10 +70,8 @@ body {-webkit-print-color-adjust: exact;}
 
 
 <body>
-    <button class='no-print' type="button" onClick="window.print()" style="background: rgb(255, 255, 255);">
-        PRINT FORMULIR
-    </button>
-    <page size="A4">
+   
+    <page>
 
         <body>
           
@@ -89,287 +94,287 @@ body {-webkit-print-color-adjust: exact;}
 	            <colgroup width="116"></colgroup>
 	            <colgroup width="137"></colgroup>
               <tr>
-                <td colspan=6 height="34" style="text-align: center;font-size: 14pt;" ><b><u><p>PENAWARAN SYSTEM TEKNOLOGI PERTANIAN</p></u></b></td>
+                <td colspan=6 height="34" style="text-align: center;font-size: 14pt;" ><b><u>PENAWARAN SYSTEM TEKNOLOGI PERTANIAN</p></u></b></td>
               </tr>
               <tr>
                 <td></td>
                 <td> </td>
                 <td> </td>
                 <td> </td>
-                <td><p ><b>Tanggal :</b></p></td>
-		            <td><p><b>{{date("d/m/Y")}}</b></p></td>
+                <td style="text-align: right;" ><b>Tanggal :</b></td>
+		            <td><b>{{date("d/m/Y")}}</b></td>
               </tr>
               <tr>
-                <td><p><b>Kepada YTH</b></p></td>
+                <td width="140px"><b>Kepada YTH</b></td>
                 <td> : </td>
                 <td colspan=2> {{$data->nama}} </td>
               </tr>
               <tr>
-                <td><p><b>Alamat</b></p></td>
+                <td width="140px"><b>Alamat</b></td>
                 <td> : </td>
                 <td colspan=2> {{$data->alamat}} </td>
               </tr>
               <tr>
-                <td><b><p >Type Paket</p></b></td>
+                <td width="140px"><b>Type Paket</b></td>
                 <td> : </td>
                 <td colspan=2> Indoor </td>
               </tr>
               <tr>
-                <td><b><p >Luasan Area</p></b></td>
+                <td width="140px"><b>Luasan Area</b></td>
                 <td> : </td>
                 <td colspan=2> 250 - 400 m2 </td>
               </tr>
               <tr>
-                <td><b><p >Pembagian Zona</p></b></td>
+                <td width="140px"><b>Pembagian Zona</b></td>
                 <td> : </td>
                 <td colspan=2> 1 Zona </td>
               </tr>
               <tr>
-                <td><b><p >Jenis Mekanikal</p></b></td>
+                <td width="140px"><b>Jenis Mekanikal</b></td>
                 <td> : </td>
                 <td colspan=2> Cooling System </td>
               </tr>
               <tr>
-                <td><b><p >Cust-ID</p></b></td>
+                <td width="140px"><b>Cust-ID</b></td>
                 <td> : </td>
                 <td colspan=2> {{$data->cust}} </td>
               </tr>
               <tr>
-                <td><b><p >Quote#</p></b></td>
+                <td width="140px"><b>Quote#</b></td>
                 <td> : </td>
                 <td colspan=2> {{$data->quote}} </td>
               </tr>
               <tr>
-                <td colspan=6 height="40" valign=bottom ><p style="color: #33CCCC;"><b>Produk Habibi Garden </b></p></td>
+                <td colspan=6 height="40" valign=bottom ><p style="color: #33CCCC;"><b>Produk Habibi Garden </b></td>
               </tr>
               <tr  style="background-color: #33CCCC;">
-                <td id="border" ><b><p style="text-align: center;">Kode Produk</p></b></td>
-                <td id="border" ><b><p style="text-align: center;"> QTY </p></b></td>
-                <td id="border" ><b><p style="text-align: center;"> UOM </p></b></td>
-                <td id="border" ><b><p style="text-align: center;"> Nama Produk </p></b></td>
-                <td id="border" ><b><p style="text-align: center;"> Harga  </p></b></td>
-                <td id="border" ><b><p style="text-align: center;"> Total Harga </p></b></td>
+                <th id="border" style="text-align: center;">Kode Produk</th>
+                    <th id="border" style="text-align: center;">QTY</th>
+                    <th id="border" style="text-align: center;">UOM</th>
+                    <th id="border" style="text-align: center;" width="160px">Nama Produk</th>
+                    <th id="border" style="text-align: center;">Harga</th>
+                    <th id="border" style="text-align: center;">Total Harga</th>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p>HG</p></td>
-                <td id="border" style="text-align: center;"><p> 1 </p></td>
-                <td id="border" style="text-align: center;"><p> Unit </p></td>
-                <td id="border" style="text-align: left;"><p> Habibi Grow</p></td>
-                <td id="border" style="text-align: right;"><p> Rp8,000,000  </p></td>
-                <td id="border" style="text-align: right;"><p> Rp8,000,000 </p></td>
+                <td id="border" style="text-align: center;">HG</td>
+                <td id="border" style="text-align: center;"> 1 </td>
+                <td id="border" style="text-align: center;"> Unit </td>
+                <td id="border" style="text-align: left;"> Habibi Grow</td>
+                <td id="border" style="text-align: right;"> Rp8,000,000  </td>
+                <td id="border" style="text-align: right;"> Rp8,000,000 </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p>HCI</p></td>
-                <td id="border" style="text-align: center;"><p> 1 </p></td>
-                <td id="border" style="text-align: center;"><p> Unit </p></td>
-                <td id="border" style="text-align: left;"><p> Habibi Climate Indoor</p></td>
-                <td id="border" style="text-align: right;"><p> Rp4,500,000  </p></td>
-                <td id="border" style="text-align: right;"><p> Rp4,500,000 </p></td>
+                <td id="border" style="text-align: center;">HCI</td>
+                <td id="border" style="text-align: center;"> 1 </td>
+                <td id="border" style="text-align: center;"> Unit </td>
+                <td id="border" style="text-align: left;"> Habibi Climate Indoor</td>
+                <td id="border" style="text-align: right;"> Rp4,500,000  </td>
+                <td id="border" style="text-align: right;"> Rp4,500,000 </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p>HCS</p></td>
-                <td id="border" style="text-align: center;"><p> 1 </p></td>
-                <td id="border" style="text-align: center;"><p> Pack </p></td>
-                <td id="border" style="text-align: left;"><p> Habibi Cooling</p></td>
-                <td id="border" style="text-align: right;"><p> Rp3,000,000  </p></td>
-                <td id="border" style="text-align: right;"><p> Rp3,000,000 </p></td>
+                <td id="border" style="text-align: center;">HCS</td>
+                <td id="border" style="text-align: center;"> 1 </td>
+                <td id="border" style="text-align: center;"> Pack </td>
+                <td id="border" style="text-align: left;"> Habibi Cooling</td>
+                <td id="border" style="text-align: right;"> Rp3,000,000  </td>
+                <td id="border" style="text-align: right;"> Rp3,000,000 </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p>HL</p></td>
-                <td id="border" style="text-align: center;"><p> 1 </p></td>
-                <td id="border" style="text-align: center;"><p> Pack </p></td>
-                <td id="border" style="text-align: left;"><p> Habibi Link</p></td>
-                <td id="border" style="text-align: right;"><p> Rp3,000,000  </p></td>
-                <td id="border" style="text-align: right;"><p> Rp3,000,000 </p></td>
+                <td id="border" style="text-align: center;">HL</td>
+                <td id="border" style="text-align: center;"> 1 </td>
+                <td id="border" style="text-align: center;"> Pack </td>
+                <td id="border" style="text-align: left;"> Habibi Link</td>
+                <td id="border" style="text-align: right;"> Rp3,000,000  </td>
+                <td id="border" style="text-align: right;"> Rp3,000,000 </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p></p></td>
-                <td id="border" style="text-align: center;"><p> 1 </p></td>
-                <td id="border" style="text-align: center;"><p> Account </p></td>
-                <td id="border" style="text-align: left;"><p> ~ Android Apps dan Web Apps</p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
+                <td id="border" style="text-align: center;"></td>
+                <td id="border" style="text-align: center;"> 1 </td>
+                <td id="border" style="text-align: center;"> Account </td>
+                <td id="border" style="text-align: left;"> ~ Android Apps dan Web Apps</td>
+                <td id="border" style="text-align: right;">  </td>
+                <td id="border" style="text-align: right;">  </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p></p></td>
-                <td id="border" style="text-align: center;"><p> 1 </p></td>
-                <td id="border" style="text-align: center;"><p> Unit </p></td>
-                <td id="border" style="text-align: left;"><p> ~ Modem / Repeater</p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
+                <td id="border" style="text-align: center;"></td>
+                <td id="border" style="text-align: center;"> 1 </td>
+                <td id="border" style="text-align: center;"> Unit </td>
+                <td id="border" style="text-align: left;"> ~ Modem / Repeater</td>
+                <td id="border" style="text-align: right;">  </td>
+                <td id="border" style="text-align: right;">  </td>
               </tr>
               <tr style="background-color:#33CCCC;">
-                <td id="border" colspan=5 height="18" style="text-align: center;"><b><p>Sub Total Produk Habibi Garden</p></b></td>
-                <td id="border" style="text-align: right;" ><b><p> Rp18,500,000 </p></b></td>
+                <td id="border" colspan=5 height="18" style="text-align: center;"><b>Sub Total Produk Habibi Garden</b></td>
+                <td id="border" style="text-align: right;" ><b> Rp18,500,000 </b></td>
               </tr>
               <tr>
-                <td colspan=6 height="40" valign=bottom style="text-align: left;" ><b><p  style="color: #33CCCC;">Mekanikal Support Sistem </p></b></td>
+                <td colspan=6 height="40" valign=bottom style="text-align: left;" ><b><p  style="color: #33CCCC;">Mekanikal Support Sistem </b></td>
               </tr>
               <tr style="background-color:#33CCCC;">
-                <td id="border" style="text-align: center;" ><b><p>Kode Produk</p></b></td>
-                <td id="border" style="text-align: center;" ><b><p> QTY </p></b></td>
-                <td id="border" style="text-align: center;" ><b><p> UOM </p></b></td>
-                <td id="border" style="text-align: center;" ><b><p> Nama Produk </p></b></td>
-                <td id="border" style="text-align: center;" ><b><p> Harga  </p></b></td>
-                <td id="border" style="text-align: center;" ><b><p> Total Harga </p></b></td>
+                <th id="border" style="text-align: center;">Kode Produk</th>
+                    <th id="border" style="text-align: center;">QTY</th>
+                    <th id="border" style="text-align: center;">UOM</th>
+                    <th id="border" style="text-align: center;" width="160px">Nama Produk</th>
+                    <th id="border" style="text-align: center;">Harga</th>
+                    <th id="border" style="text-align: center;">Total Harga</th>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p>HIF</p></td>
-                <td id="border" style="text-align: center;"><p> 1 </p></td>
-                <td id="border" style="text-align: center;"><p> Loc </p></td>
-                <td id="border" style="text-align: left;"><p> Habibi Instalation Fee </p></td>
-                <td id="border" style="text-align: right;"><p> Rp3.000,000  </p></td>
-                <td id="border" style="text-align: right;"><p> Rp3.000,000</p></td>
+                <td id="border" style="text-align: center;">HIF</td>
+                <td id="border" style="text-align: center;"> 1 </td>
+                <td id="border" style="text-align: center;"> Loc </td>
+                <td id="border" style="text-align: left;"> Habibi Instalation Fee </td>
+                <td id="border" style="text-align: right;"> Rp3.000,000  </td>
+                <td id="border" style="text-align: right;"> Rp3.000,000</td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p>HMSFS</p></td>
-                <td id="border" style="text-align: center;"><p> 1 </p></td>
-                <td id="border" style="text-align: center;"><p> Pack </p></td>
-                <td id="border" style="text-align: left;"><p> Habibi Mekanikal Support Cooling System </p></td>
-                <td id="border" style="text-align: right;"><p> Rp10.000,000  </p></td>
-                <td id="border" style="text-align: right;"><p> Rp10.000,000 </p></td>
+                <td id="border" style="text-align: center;">HMSFS</td>
+                <td id="border" style="text-align: center;"> 1 </td>
+                <td id="border" style="text-align: center;"> Pack </td>
+                <td id="border" style="text-align: left;"> Habibi Mekanikal Support Cooling System </td>
+                <td id="border" style="text-align: right;"> Rp10.000,000  </td>
+                <td id="border" style="text-align: right;"> Rp10.000,000 </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p> </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: left;"><p> ~ Selang HDPE 6 mm </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
+                <td id="border" style="text-align: center;"> </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: left;"> ~ Selang HDPE 6 mm </td>
+                <td id="border" style="text-align: right;">  </td>
+                <td id="border" style="text-align: right;">  </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p> </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: left;"><p> ~ Nozzle Mist 0,3 mm</p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
+                <td id="border" style="text-align: center;"> </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: left;"> ~ Nozzle Mist 0,3 mm</td>
+                <td id="border" style="text-align: right;">  </td>
+                <td id="border" style="text-align: right;">  </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p> </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: left;"><p> ~ Connector Fitting Nozzle 6mm </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
+                <td id="border" style="text-align: center;"> </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: left;"> ~ Connector Fitting Nozzle 6mm </td>
+                <td id="border" style="text-align: right;">  </td>
+                <td id="border" style="text-align: right;">  </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p> </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: left;"><p> ~ Filter 3/4 " & Catridge Refill</p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
+                <td id="border" style="text-align: center;"> </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: left;"> ~ Filter 3/4 " & Catridge Refill</td>
+                <td id="border" style="text-align: right;">  </td>
+                <td id="border" style="text-align: right;">  </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p> </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: left;"><p> ~ Pompa Dorong  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
+                <td id="border" style="text-align: center;"> </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: left;"> ~ Pompa Dorong  </td>
+                <td id="border" style="text-align: right;">  </td>
+                <td id="border" style="text-align: right;">  </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p> </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: left;"><p> ~ Pressure Gauge  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
+                <td id="border" style="text-align: center;"> </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: left;"> ~ Pressure Gauge  </td>
+                <td id="border" style="text-align: right;">  </td>
+                <td id="border" style="text-align: right;">  </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p> </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: left;"><p> ~ Pressure Regulator  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
+                <td id="border" style="text-align: center;"> </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: left;"> ~ Pressure Regulator  </td>
+                <td id="border" style="text-align: right;">  </td>
+                <td id="border" style="text-align: right;">  </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p> </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: center;"><p>  </p></td>
-                <td id="border" style="text-align: left;"><p> ~ Air-release  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
-                <td id="border" style="text-align: right;"><p>  </p></td>
+                <td id="border" style="text-align: center;"> </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: center;">  </td>
+                <td id="border" style="text-align: left;"> ~ Air-release  </td>
+                <td id="border" style="text-align: right;">  </td>
+                <td id="border" style="text-align: right;">  </td>
               </tr>
               
               <tr style="background-color:#33CCCC;" >
-                <td id="border" colspan=5 height="18" style="text-align: center;"><b><p>Sub Total Produk Habibi Garden</p></b></td>
-                <td id="border" style="text-align: right;" ><b><p> Rp13,000,000 </p></b></td>
+                <td id="border" colspan=5 height="18" style="text-align: center;"><b>Sub Total Produk Habibi Garden</b></td>
+                <td id="border" style="text-align: right;" ><b> Rp13,000,000 </b></td>
               </tr>
               <tr>
                 <td colspan=6 style="text-align: left;" ><b>* : Menyesuaikan dengan Kebutuhan Lahan , Produk yang ditawarakan untuk Franco Jakarta, dan Jawa Barat</b></td>
               </tr>
               <tr>
                 <td colspan=4><br></td>
-                <td id="border" colspan=2 style="text-align: center; background-color: #33CCCC "><b><p > Grand Total Project + PPn 10% </p></b></td>
+                <td id="border" colspan=2 style="text-align: center; background-color: #33CCCC "><b> Grand Total Project + PPn 10% </b></td>
               </tr>
               <tr>
                 <td colspan=4><br></td>
-                <td id="border" style="text-align: left;" ><b><p > Total Project </p></b></td>
-                <td id="border" style="text-align: right;"><p > Rp31,500,000 </p></td>
+                <td id="border" style="text-align: left;" ><b> Total Project </b></td>
+                <td id="border" style="text-align: right;"> Rp31,500,000 </td>
               </tr>
               <tr>
                 <td colspan=4><br></td>
-                <td id="border" style="text-align: left;" ><b><p > PPn 10% </p></b></td>
-                <td id="border" style="text-align: right;"><p > Rp3,150,000 </p></td>
+                <td id="border" style="text-align: left;" ><b> PPn 10% </b></td>
+                <td id="border" style="text-align: right;"> Rp3,150,000 </td>
               </tr>
               <tr>
                 <td colspan=4><br></td>
-                <td id="border" style="text-align: left;" ><b><p > Grand Total Project </p></b></td>
-                <td id="border" style="text-align: right;"><b><p > Rp34,650,000 </p></b></td>
+                <td id="border" style="text-align: left;" ><b> Grand Total Project </b></td>
+                <td id="border" style="text-align: right;"><b><p > Rp34,650,000 </b></td>
               </tr>
               <tr>
-                <td colspan=6 height="40" valign=bottom style="text-align: left;" ><b><p>Produk Habibi Garden (Optional) </p></b></td>
+                <td colspan=6 height="40" valign=bottom style="text-align: left;" ><b>Produk Habibi Garden (Optional) </b></td>
               </tr>
               <tr style="background-color:#33CCCC;">
-                <td id="border" style="text-align: center;"><b><p>Kode Produk</p></b></td>
-                <td id="border" style="text-align: center;"><b><p> QTY </p></b></td>
-                <td id="border" style="text-align: center;"><b><p> UOM </p></b></td>
-                <td id="border" style="text-align: center;"><b><p> Nama Produk </p></b></td>
-                <td id="border" style="text-align: center;"><b><p> Harga  </p></b></td>
-                <td id="border" style="text-align: center;"><b><p> Total Harga </p></b></td>
+                <td id="border" style="text-align: center;"><b>Kode Produk</b></td>
+                <td id="border" style="text-align: center;"><b> QTY </b></td>
+                <td id="border" style="text-align: center;"><b> UOM </b></td>
+                <td id="border" style="text-align: center;"><b> Nama Produk </b></td>
+                <td id="border" style="text-align: center;"><b> Harga  </b></td>
+                <td id="border" style="text-align: center;"><b> Total Harga </b></td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p>HD</p></td>
-                <td id="border" style="text-align: center;"><p> 1 </p></td>
-                <td id="border" style="text-align: center;"><p> Pack </p></td>
-                <td id="border" style="text-align: left;"><p> Habibi Dose </p></td>
-                <td id="border" style="text-align: right;"><p> Rp12,000,000  </p></td>
-                <td id="border" style="text-align: right;"><p> Rp12,000,000 </p></td>
+                <td id="border" style="text-align: center;">HD</td>
+                <td id="border" style="text-align: center;"> 1 </td>
+                <td id="border" style="text-align: center;"> Pack </td>
+                <td id="border" style="text-align: left;"> Habibi Dose </td>
+                <td id="border" style="text-align: right;"> Rp12,000,000  </td>
+                <td id="border" style="text-align: right;"> Rp12,000,000 </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p>HCS</p></td>
-                <td id="border" style="text-align: center;"><p> 1 </p></td>
-                <td id="border" style="text-align: center;"><p> Pack </p></td>
-                <td id="border" style="text-align: left;"><p> Habibi Climate Station (1-10 HA) </p></td>
-                <td id="border" style="text-align: right;"><p> Rp17,000,000  </p></td>
-                <td id="border" style="text-align: right;"><p> Rp17,000,000 </p></td>
+                <td id="border" style="text-align: center;">HCS</td>
+                <td id="border" style="text-align: center;"> 1 </td>
+                <td id="border" style="text-align: center;"> Pack </td>
+                <td id="border" style="text-align: left;"> Habibi Climate Station (1-10 HA) </td>
+                <td id="border" style="text-align: right;"> Rp17,000,000  </td>
+                <td id="border" style="text-align: right;"> Rp17,000,000 </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p>HCM</p></td>
-                <td id="border" style="text-align: center;"><p> 1 </p></td>
-                <td id="border" style="text-align: center;"><p> Pack </p></td>
-                <td id="border" style="text-align: left;"><p> Habibi Cam </p></td>
-                <td id="border" style="text-align: right;"><p> Rp3,000,000  </p></td>
-                <td id="border" style="text-align: right;"><p> Rp3,000,000 </p></td>
+                <td id="border" style="text-align: center;">HCM</td>
+                <td id="border" style="text-align: center;"> 1 </td>
+                <td id="border" style="text-align: center;"> Pack </td>
+                <td id="border" style="text-align: left;"> Habibi Cam </td>
+                <td id="border" style="text-align: right;"> Rp3,000,000  </td>
+                <td id="border" style="text-align: right;"> Rp3,000,000 </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p>HFA</p></td>
-                <td id="border" style="text-align: center;"><p> 3 </p></td>
-                <td id="border" style="text-align: center;"><p> Month </p></td>
-                <td id="border" style="text-align: left;"><p> Habibi Field Assistance (Vegetable) </p></td>
-                <td id="border" style="text-align: right;"><p> Rp3,250,000  </p></td>
-                <td id="border" style="text-align: right;"><p> Rp9,750,000 </p></td>
+                <td id="border" style="text-align: center;">HFA</td>
+                <td id="border" style="text-align: center;"> 3 </td>
+                <td id="border" style="text-align: center;"> Month </td>
+                <td id="border" style="text-align: left;"> Habibi Field Assistance (Vegetable) </td>
+                <td id="border" style="text-align: right;"> Rp3,250,000  </td>
+                <td id="border" style="text-align: right;"> Rp9,750,000 </td>
               </tr>
               <tr>
-                <td id="border" style="text-align: center;"><p>HWTT</p></td>
-                <td id="border" style="text-align: center;"><p> 1 </p></td>
-                <td id="border" style="text-align: center;"><p> Pack </p></td>
-                <td id="border" style="text-align: left;"><p> Habibi Water Tower and Torrent </p></td>
-                <td id="border" style="text-align: right;"><p> Rp12,000,000 </p></td>
-                <td id="border" style="text-align: right;"><p> Rp12,000,000 </p></td>
+                <td id="border" style="text-align: center;">HWTT</td>
+                <td id="border" style="text-align: center;"> 1 </td>
+                <td id="border" style="text-align: center;"> Pack </td>
+                <td id="border" style="text-align: left;"> Habibi Water Tower and Torrent </td>
+                <td id="border" style="text-align: right;"> Rp12,000,000 </td>
+                <td id="border" style="text-align: right;"> Rp12,000,000 </td>
               </tr>
             </table>
             <div class="page-break"></div>
@@ -388,85 +393,89 @@ body {-webkit-print-color-adjust: exact;}
             <h2 style="text-align: center;" >Skema Kerja Sistem Teknologi Pertanian</h2>
             <h2 style="text-align: center;">Habibi Digital Nusantara</h2>
             <p>&nbsp;</p>
-            <ol>
-              <b><li>Tahapan Cara Kerja Habibi Garden</li></b>
-              <p></p>
-              <ul>
-                  <li>Daftar sekarang, Team akan mereview keinginan dari pengguna terhadap sistem penanaman dilahan dan Penawaran Sistem Habibi Garden</li>
-                  <li>Survey lokasi, spesifikasi komoditi pengguna</li>
-                  <li>Perancangan Produk Habibi Garden dan Desain Instalasi menyesuaikan kondisi dan ukuran</li>
-                  <li>Persiapan Produk Habibi Garden</li>
-                  <li>Instalasi Sistem Habibi Garden</li>
-                </ul>
-                <p></p>
-              <b><li>Ketentuan</li></b>
-              <p></p>
-                <ul>
-                  <li>Garansi Sensor diberikan selama 6 bulan penggunaan (Sistem Beli),</li>
-                  <li>Persiapan dan pengerjaan Alat dilakukan saat pembayaran DP minimal 30% dan Pelunasan dilakukan selambatnya H+7 setelah selesai Instalasi pada lahan</li>
-                  <li>Pelaksanaan Instalasi Sistem Teknologi di lapangan dilakukan bersamaan dengan Kelompok Tani ataupun Petani pemilik lahan </li>
-                  <li>Biaya Perbaikan Sensor apabila terjadi masalah pada sensor sudah termasuk dalam Pendampingan</li>
-                  <li>Sensor yang menggunakan GSM dan penggunaan mengguanakan IP Camera dilakukan pengisian oleh Perusahaan ataupun Penggunaan Sensor</li>
-                  <li>Pendampingan dilakukan setelah instalasi selesai dilakukan dan selanjutnya Petani diharuskan mandiri dalam menjaga Alat dan Sensor </li>
-                </ul>
-                <p></p>
-              <b><li>Tahapan Setelah Instalasi</li></b>
-              <p></p>
-                <ul>
-                  <li>Tahapan 1 : Setelah dilakukan instalasi akan dilakukan <b>Pengumpulan Data Kondisi Lahan</b> berdasarkan data yang di dapatkan Sensor Habibi Garden selama 1-2 Minggu dan dilakukan Evaluasi Kesesuaian data dengan komoditas budidaya berdasarkan data yang terkumpul </li>
-                  <li>Tahapan 2 : Hasil Evaluasi Kesesuain data akan dilakukan Update sesuai dengan kebuthan Kebun dan Komoditas Budidaya 1-2 Minggu <b>(Menggunakan Tombol Manual dan Jadwal)</b> dan dilakukan Evaluasi Kesesuaian Update Data</li>
-                  <li>Tahapan 3 : Hasil Evaluasi Kesesuaian Update Data akan dilakukan Update Alat dan Sensor menjadi bekerja secara otomatis <b>(Otomatis Bekerja berdasarkan Data Sensor)</b></li>
-                  <li>Tahapan Selama Pola Tanam 1 : Petani Pengguna Membantu Team Habibi Garden dalam <b>Pengisian Data Ceklis Pertumbuhan Tanaman</b> yang akan di berikan Team Habibi Garden</li>
-                </ul>
-                <p></p>
-              <b><li>Habibi Field Assistance</li></b>
-                <p>Pelatihan dan pendampingan Lapangan langsung oleh Team Habibi Garden bersama Petani Pengguna Sistem Habibi Garden, yang terdiri dari:</p>
-                <ol>
-                  <li>Peralihan Sistem Pertanian sebelumnya ke Sistem Teknologi Habibi Garden </li>
-                  <li>Monitoring dan Pengumpulan Data Kondisi Lahan dengan sensor</li>
-                  <li>Penyajian data yang terkumpul dan Menganti Sistem penggunaan menjadi Sistem Penjadwalan</li>
-                  <li>Monitoring Sistem Penjadwalan dan Peralihan Sistem Penjadwalan menjadi Sistem Otomatis menggunakan Sensor</li>
-                  <li>Cara Penggunaan Alat dan Web Dashboard Habibi Garden</li>
-                  <li>Maintanance dan Troubleshooting Alat dan Sensor Habibi Garden</li>
-                  <li>Evaluasi kesesuain Kondisi Lahan berdasarkan Data Sensor dengan Komoditas Budidaya</li>
-                  <li>Sistem Manajemen Kebun dan Analisis Usaha Tani Setelah menggunakan Sistem Teknologi Pertanian</li>
-                </ol>
-                <p></p>
-              <b><li>Informasi</li></b>
-              <table>
-                <colgroup width="100"></colgroup>
-                <colgroup width="3"></colgroup>
-                <colgroup width="59"></colgroup>
-                <colgroup width="249"></colgroup>
-                <colgroup width="116"></colgroup>
-                <colgroup width="137"></colgroup>
-                <tr>
-                  <td style="text-align: left;" ><p >Alamat</p></td>
-                  <td  > : </td>
-                  <td colspan=4> Jalan Gading Utama Timur No 20 Blok B3-8 Arcamanik </td>
-                </tr>
-                <tr>
-                  <td style="text-align: left;" ><p >Telphone </p></td>
-                  <td  > : </td>
-                  <td colspan=4> +62 812 7763 9698 (Mustika Arsri) </td>
-                </tr>
-                <tr>
-                  <td style="text-align: left;" ><p >Email </p></td>
-                  <td  > : </td>
-                  <td colspan=4> <a href="mailto:admin@habibigarden.com">admin@habibigarden.com </a> atau <a href="mailto:info@habibigarden.com">info@habibigarden.com</a> </td>
-                </tr>
-                <tr>
-                  <td style="text-align: left;" ><p >Instagram </p></td>
-                  <td  > : </td>
-                  <td colspan=4> @habibi_garden </td>
-                </tr>
-                <tr>
-                  <td style="text-align: left;" ><p >Website </p></td>
-                  <td  > : </td>
-                  <td colspan=4>  <a href="https://www.habibigarden.com/">https://www.habibigarden.com/</a> </td>
-                </tr>
-              </table>
-              <p>&nbsp;</p>
+
+            <ol start="1">
+                <li> <b>Tahapan Cara Kerja Habibi Garden</b></li>
+                  <ul>
+                      <li>Daftar sekarang, Team akan mereview keinginan dari pengguna terhadap sistem penanaman dilahan dan Penawaran Sistem Habibi Garden</li>
+                      <li>Survey lokasi, spesifikasi komoditi pengguna</li>
+                      <li>Perancangan Produk Habibi Garden dan Desain Instalasi menyesuaikan kondisi dan ukuran</li>
+                      <li>Persiapan Produk Habibi Garden</li>
+                      <li>Instalasi Sistem Habibi Garden</li>
+                  </ul>
+            </ol >
+            <ol start="2">
+                <li> <b>Ketentuan</b> </li>
+                  <ul>
+                      <li>Garansi Sensor diberikan selama 6 bulan penggunaan (Sistem Beli),</li>
+                      <li>Persiapan dan pengerjaan Alat dilakukan saat pembayaran DP minimal 30% dan Pelunasan dilakukan selambatnya H+7 setelah selesai Instalasi pada lahan</li>
+                      <li>Pelaksanaan Instalasi Sistem Teknologi di lapangan dilakukan bersamaan dengan Kelompok Tani ataupun Petani pemilik lahan </li>
+                      <li>Biaya Perbaikan Sensor apabila terjadi masalah pada sensor sudah termasuk dalam Pendampingan</li>
+                      <li>Sensor yang menggunakan GSM dan penggunaan mengguanakan IP Camera dilakukan pengisian oleh Perusahaan ataupun Penggunaan Sensor</li>
+                      <li>Pendampingan dilakukan setelah instalasi selesai dilakukan dan selanjutnya Petani diharuskan mandiri dalam menjaga Alat dan Sensor </li>
+                  </ul>
+            </ol>
+
+            <ol start="3">
+                <li> <b>Tahapan Setelah Instalasi</b> </li>
+                  <ul>
+                    <li>Tahapan 1 : Setelah dilakukan instalasi akan dilakukan <b>Pengumpulan Data Kondisi Lahan</b> berdasarkan data yang di dapatkan Sensor Habibi Garden selama 1-2 Minggu dan dilakukan Evaluasi Kesesuaian data dengan komoditas budidaya berdasarkan data yang terkumpul </li>
+                    <li>Tahapan 2 : Hasil Evaluasi Kesesuain data akan dilakukan Update sesuai dengan kebuthan Kebun dan Komoditas Budidaya 1-2 Minggu <b>(Menggunakan Tombol Manual dan Jadwal)</b> dan dilakukan Evaluasi Kesesuaian Update Data</li>
+                    <li>Tahapan 3 : Hasil Evaluasi Kesesuaian Update Data akan dilakukan Update Alat dan Sensor menjadi bekerja secara otomatis <b>(Otomatis Bekerja berdasarkan Data Sensor)</b></li>
+                    <li>Tahapan Selama Pola Tanam 1 : Petani Pengguna Membantu Team Habibi Garden dalam <b>Pengisian Data Ceklis Pertumbuhan Tanaman</b> yang akan di berikan Team Habibi Garden</li>
+                  </ul>
+            </ol>
+            <br>
+            <ol start="4">
+                <li> <b>Habibi Field Assistance</b> </li>
+                  <ul>
+                    <li>Peralihan Sistem Pertanian sebelumnya ke Sistem Teknologi Habibi Garden </li>
+                    <li>Monitoring dan Pengumpulan Data Kondisi Lahan dengan sensor</li>
+                    <li>Penyajian data yang terkumpul dan Menganti Sistem penggunaan menjadi Sistem Penjadwalan</li>
+                    <li>Monitoring Sistem Penjadwalan dan Peralihan Sistem Penjadwalan menjadi Sistem Otomatis menggunakan Sensor</li>
+                    <li>Cara Penggunaan Alat dan Web Dashboard Habibi Garden</li>
+                    <li>Maintanance dan Troubleshooting Alat dan Sensor Habibi Garden</li>
+                    <li>Evaluasi kesesuain Kondisi Lahan berdasarkan Data Sensor dengan Komoditas Budidaya</li>
+                    <li>Sistem Manajemen Kebun dan Analisis Usaha Tani Setelah menggunakan Sistem Teknologi Pertanian</li>
+                  </ul>
+            </ol>
+            <ol start="5">
+                <li> <b>Informasi</b> </li>
+            </ol>
+                <table>
+                    <tr>
+                      <td width="10%"></td>
+                        <td style="text-align: left;" >Alamat</td>
+                        <td  > : </td>
+                        <td colspan=4> Jalan Gading Utama Timur No 20 Blok B3-8 Arcamanik </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                        <td style="text-align: left;" >Telphone </td>
+                        <td  > : </td>
+                        <td colspan=4> +62 812 7763 9698 (Mustika Arsri) </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                        <td style="text-align: left;" >Email </td>
+                        <td  > : </td>
+                        <td colspan=4> <a href="mailto:admin@habibigarden.com">admin@habibigarden.com </a> atau <a href="mailto:info@habibigarden.com">info@habibigarden.com</a> </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                        <td style="text-align: left;" >Instagram </td>
+                        <td  > : </td>
+                        <td colspan=4> @habibi_garden </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                        <td style="text-align: left;" >Website </td>
+                        <td  > : </td>
+                        <td colspan=4>  <a href="https://www.habibigarden.com/">https://www.habibigarden.com/</a> </td>
+                    </tr>
+                    </table>
+
+            <p>&nbsp;</p>
               </page>
 </body>
 </html>
